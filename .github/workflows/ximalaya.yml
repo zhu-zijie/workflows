@@ -23,5 +23,5 @@ jobs:
         with:
           source_repo: "https://github.com/Zero-S1/xmly_speed.git"
           source_branch: "master"
-          destination_branch: "main"
+          destination_branch:"Zero-S1”
           github_token: ${{ secrets.PAT }}
