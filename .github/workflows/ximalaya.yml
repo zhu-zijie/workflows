@@ -1,4 +1,4 @@
-name: 同步上游仓库
+name: Zero-S1
 on:
   schedule:
     - cron: '0 8 */2 * *'
