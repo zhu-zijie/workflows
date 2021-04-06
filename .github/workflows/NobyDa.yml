@@ -25,4 +25,4 @@ jobs:
           source_repo: "https://github.com/NobyDa/Script.git"
           source_branch: "master"
           destination_branch: "NobyDa"
-          github_token: ${{ secrets.PAT }}
+          github_token: ${{ secrets.PAT }
