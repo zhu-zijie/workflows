@@ -16,7 +16,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          persist-credentials: false
+          persist-credentials: fals
+          
 
       - name: sync NobyDa_Script
         uses: repo-sync/github-sync@v2
