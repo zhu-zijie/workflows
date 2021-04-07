@@ -31,7 +31,7 @@ jobs:
         if: env.JD_COOKIE
         run: |
           cd ~/workflows
-          node JD-DailyBonus.js
+          node JD-DailyBonus/JD-DailyBonus.js
         env:
           
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
