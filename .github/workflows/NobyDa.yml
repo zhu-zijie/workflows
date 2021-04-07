@@ -17,8 +17,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           persist-credentials: fals
-          
-
+         
       - name: sync NobyDa_Script
         uses: repo-sync/github-sync@v2
         if: env.PAT
@@ -26,4 +25,4 @@ jobs:
           source_repo: "https://github.com/NobyDa/Script.git"
           source_branch: "master"
           destination_branch: "NobyDa"
-          github_token: ${{ secrets.PAT }
+          github_token: ${{ secrets.PAT }}
