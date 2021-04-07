@@ -30,7 +30,7 @@ jobs:
         if: env.JD_COOKIE
         run: |
           cd ~/jd_scripts
-          node jd.js
+          node jd_pet.js
         env:
           
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
