@@ -23,6 +23,6 @@ jobs:
         if: env.PAT
         with:
           source_repo: "https://github.com/elecV2/elecV2P.git"
-          source_branch: "main"
+          source_branch: "master"
           destination_branch: "elecV2"
           github_token: ${{ secrets.PAT }}
