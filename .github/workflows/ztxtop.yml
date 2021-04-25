@@ -1,17 +1,12 @@
-##  ziye 新仓库自动定时同步代码 ，教程公众号文章讲过了，不废话了，地址https://mp.weixin.qq.com/s/fcI4vQHD8TNajvTML9g3AA
-
-
-
-
-name: ziye-sync
+name: ztxtop-sync
 on:
   schedule:
-    - cron: '1 */3 * * *'
+    - cron: '25 */3 * * *'
   workflow_dispatch:
   watch:
     types: started
   repository_dispatch:
-    types: sync-ziye888-JavaScript
+    types: sync-ztxtop-x
 jobs:
   repo-sync:
     env:
@@ -23,11 +18,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync ziye888-JavaScript
+      - name: sync ztxtop-x
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/ziye888/JavaScript.git"
+          source_repo: "https://github.com/ztxtop/x.git"
           source_branch: "main"
-          destination_branch: "ZIYE"
+          destination_branch: "ztxtop"
           github_token: ${{ secrets.PAT }}
